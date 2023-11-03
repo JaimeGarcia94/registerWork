@@ -1,0 +1,62 @@
+.titleTable{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.entrada{
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(243, 169, 71);
+}
+
+.entrada:hover{
+    background-color: rgb(238, 145, 23);
+}
+
+.salida{
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(243, 169, 71);
+}
+
+.salida:hover{
+    background-color: rgb(238, 145, 23);
+}
+
+.logout{
+    float: right;
+    display:block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(243, 169, 71);
+}
+
+.logout:hover{
+    background-color: rgb(238, 145, 23);
+}
+
+.openModal{
+    border: none;
+    color: rgb(243, 169, 71);
+}
+
+.openModal:hover{
+    border: none;
+    color: rgb(238, 145, 23);
+}
+
+.deleteWorkEntry{
+    border: none;
+    color: rgb(240, 115, 115);
+}
+
+.deleteWorkEntry:hover{
+    border: none;
+    color: rgb(250, 32, 32);
+}

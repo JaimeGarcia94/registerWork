@@ -1,0 +1,35 @@
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Actualizar el registro {{modalId}}</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="modalId" value={{modalId}}>
+                <input type="text" id="startDate" name="startDate">
+                <input type="text" id="endDate" name="endDate">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary save">Modificar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block javascripts %}
+ <script type="text/javascript">
+ $(document).ready(function() {
+    $('#startDate').datetimepicker({
+        format: 'd-m-Y H:i:s',
+    });
+    $('#endDate').datetimepicker({
+        format: 'd-m-Y H:i:s',
+    });
+    $.datetimepicker.setLocale('es');
+});
+ </script>
+
+{% endblock %}
+
